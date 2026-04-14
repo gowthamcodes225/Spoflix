@@ -1,0 +1,139 @@
+*{
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+body{
+  background: black;
+  color: white;
+}
+
+/* LOGIN */
+.login-container{
+  width: 300px;
+  margin: 150px auto;
+  padding: 30px;
+  background: #111;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.login-container input{
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 5px;
+}
+
+.login-container button{
+  width: 100%;
+  padding: 10px;
+  background: red;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+/* NAVBAR */
+.navbar{
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  position: absolute;
+  width: 100%;
+}
+
+.logo{
+  color: red;
+}
+
+.login-btn{
+  background: red;
+  border: none;
+  padding: 8px 15px;
+  color: white;
+}
+
+/* HERO */
+.hero{
+  height: 90vh;
+  background: url("sita4.jpg") no-repeat center/cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.hero-content h1{
+  font-size: 50px;
+}
+
+.hero-content p{
+  margin: 20px 0;
+}
+
+.get-started{
+  padding: 10px 20px;
+  background: red;
+  border: none;
+  color: white;
+}
+
+/* MOVIES */
+.movies{
+  padding: 20px;
+}
+
+.row{
+  display: flex;
+  gap: 15px;
+  overflow-x: scroll;
+}
+
+.row img{
+  width: 300px;
+  border-radius: 5px;
+  transition: transform 0.3s;
+}
+
+.row img:hover{
+  transform: scale(1.1);
+}
+
+/* 🔥 RESPONSIVE ADDITION */
+
+/* TABLET */
+@media (max-width: 1024px){
+  .row img{
+    width: 250px;
+  }
+}
+
+/* MOBILE */
+@media (max-width: 768px){
+
+  .login-container{
+    width: 90%;
+    margin: 100px auto;
+  }
+
+  .navbar{
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .hero-content h1{
+    font-size: 28px;
+  }
+
+  .hero-content p{
+    font-size: 14px;
+  }
+
+  .row img{
+    width: 200px;
+  }
+
+}
